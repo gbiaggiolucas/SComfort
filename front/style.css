@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para incluir as bordas no cálculo do tamanho */
+}
+
+body {
+    background: rgba(68, 88, 119, 1);
+}
+
+.logo {
+    height: 300px;
+    margin-left: 40vw;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+}
+
+.icon {
+    height: 100px;
+    padding: 20px;
+}
+
+#cart, #signup, #info {
+    height: 100px;
+    padding: 20px;
+}
+
+.quemsomos {
+    margin-top: 15vh;
+    width: 100%;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background: #35597B;
+    border-top: 5px solid #394250;
+    border-bottom: 5px solid #394250;
+    font-weight: 400;
+    font-size: 3em; /* Tamanho padrão da fonte */
+    line-height: 1.2; /* Ajustado o espaçamento entre linhas */
+    color: #FFBD59;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.signup{
+    width: 100%;
+    align-items: center;
+    background: #51627C;
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Tamanho padrão da fonte */
+    line-height: 1.2; /* Ajustado o espaçamento entre linhas */
+    color: #FFBD59;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FFBD59;
+    border-radius: 5px;
+    width: 50vw;
+    box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
+    background-color: #35597B;
+    color: #FFBD59;
+}
+
+#enviar{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FFBD59;
+    border-radius: 5px;
+    width: 20vw;
+    box-sizing: border-box; /* Garante que a largura inclua padding e bordas */
+    background-color: #35597B;
+    color: #FFBD59;
+}
+
+a {
+    color: #FFBD59;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        height: 150px; /* Reduz a altura do logotipo */
+        margin-left: 30vw;
+    }
+
+    .icon {
+        height: 3em;
+        padding: 1em;
+    }
+
+    .quemsomos {
+        font-size: 1.5em; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1; /* Reduz o espaçamento entre as linhas */
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 800px) {
+    .logo {
+        height: 10em; /* Ajusta a altura do logotipo */
+        margin-left: 35vw; /* Ajusta a margem para centralizar */
+        text-align: center; /* Centraliza o logotipo */
+    }
+
+    .icon {
+        height: 3em;
+        padding: 1em;
+    }
+
+    .quemsomos {
+        font-size: 2em; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1; /* Reduz o espaçamento entre as linhas */
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .logo {
+        height: 10em; /* Ajusta a altura do logotipo */
+        margin-left: 40vw; /* Ajusta a margem para centralizar */
+        text-align: center; /* Centraliza o logotipo */
+    }
+
+    .icon {
+        height: 3em;
+        padding: 1em;
+    }
+
+    .quemsomos {
+        font-size: 2em; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1; /* Reduz o espaçamento entre as linhas */
+    }
+}
